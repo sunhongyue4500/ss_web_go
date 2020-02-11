@@ -12,7 +12,7 @@ import (
 var loger *log.Logger
 
 func init() {
-	f, err := os.OpenFile("text.log",
+	f, err := os.OpenFile("/var/log/goweb.log",
 		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Println(err)
