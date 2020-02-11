@@ -7,7 +7,7 @@ FROM golang:1.13.7
 LABEL maintainer="hongyi <hong6yi@gmail.com>"
 
 # Set the Current Working Directory inside the container
-WORKDIR /app
+WORKDIR /go/src/app
 
 # Copy go mod and sum files
 #COPY go.mod go.sum ./
