@@ -20,7 +20,7 @@ WORKDIR /go/src
 # Copy the source from the current directory to the Working Directory inside the container
 
 # Build the Go app
-RUN go install
+RUN go install ss_go_web.go
 
 # Build the golang-docker command inside the container.
 
